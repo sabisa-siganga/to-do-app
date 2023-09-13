@@ -1,0 +1,85 @@
+/* react-bootstrap bootstrap link */
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+/* goolgle fonts link */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* styling of the todo container  */
+.todo-container {
+  background: #f3f0f0;
+  box-shadow: 1px 1px 37px #a7a4a4;
+  max-width: 600px;
+  height: 500px;
+  margin: 0 auto;
+  padding-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+
+  .form-info {
+    /* styling the title */
+    .title {
+      font-size: 25px;
+      font-weight: 400;
+      color: #541554;
+    }
+    /* styling of the input field container */
+    .input-container {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      margin-bottom: 20px;
+      align-items: center;
+
+      /* styling of the input field  */
+      input {
+        width: 400px;
+        height: 37px;
+        border: 2px solid #541554;
+        border-radius: 5px;
+        padding: 0 10px;
+        font-size: 15px;
+      }
+    }
+
+    .list-btns-cont {
+      display: flex;
+      justify-content: space-between;
+
+      .todos-list {
+        ul {
+          li {
+            list-style: circle;
+            color: #541554;
+          }
+        }
+      }
+
+      /* styling of the buttons container */
+      .buttons {
+        flex-direction: row;
+        row-gap: 10px;
+        align-items: center;
+      }
+
+      /* styling of the buttons*/
+      .btn {
+        width: 30px;
+        height: 30px;
+        background: #541554;
+        color: #fff;
+        border-radius: 5px;
+        border: 2px solid #fff;
+        font-size: 15px;
+
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
