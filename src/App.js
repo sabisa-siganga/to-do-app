@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Button, Container } from "react-bootstrap";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container className="todo-container">
+      <form>
+        <div className="input-field">
+          <label>To-do List</label>
+          <input placeholder="Please enter a to-do" />
+        </div>
+
+        <div className="todos-list">
+          <ul>
+            <li>list</li>
+          </ul>
+        </div>
+
+        <div className="buttons">
+          <Button className="btns">
+            <span class="material-symbols-outlined">edit</span>
+          </Button>
+          <Button className="btns">
+            <span class="material-symbols-outlined">delete</span>
+          </Button>
+          <Button className="btns">
+            <span class="material-symbols-outlined">done</span>
+          </Button>
+        </div>
+      </form>
+    </Container>
   );
 }
 

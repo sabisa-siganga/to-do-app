@@ -1,38 +1,66 @@
-.App {
+/* react-bootstrap bootstrap link */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* styling of the todo container  */
+.todo-container {
   text-align: center;
-}
+  background: #f3f0f0;
+  box-shadow: 1px 1px 37px #a7a4a4;
+  max-width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  padding-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+  /* styling of the input field container */
+  .input-field {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+
+    /* styling the label of the input field */
+    label {
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    /* styling of the input field  */
+    input {
+      width: 200px;
+      height: 37px;
+      border: 2px solid #541554;
+      border-radius: 5px;
+      padding: 0 10px;
+      font-size: 15px;
+    }
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
+  /* styling of the buttons container */
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+
+  /* styling of the buttons*/
+  .btn {
+    width: 111px;
+    height: 40px;
+    background: #541554;
+    color: #fff;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    font-size: 15px;
+
   }
+
 }
