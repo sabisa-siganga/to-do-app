@@ -1,0 +1,63 @@
+.list-btns-cont {
+  display: flex;
+  justify-content: space-between;
+
+  .todos-list {
+  }
+
+  /* styling of the buttons container */
+  .buttons {
+    flex-direction: row;
+    row-gap: 10px;
+    align-items: center;
+  }
+
+  /* styling of the buttons*/
+  .btn {
+    width: 30px;
+    height: 30px;
+    background: #541554;
+    color: #fff;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    font-size: 15px;
+
+    span {
+      font-size: 16px;
+    }
+  }
+
+  .linestroke {
+    text-decoration: line-through;
+  }
+}
+.input-edit {
+  form {
+    display: flex;
+  }
+  input {
+    width: 400px;
+    height: 37px;
+    border: 2px solid #541554;
+    border-radius: 5px 0 0 5px;
+    padding: 0 10px;
+    outline: none;
+  }
+  .save-btn {
+    width: 45px;
+    height: 37px;
+    background: #541554;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    border: 2px solid #541554;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+    span {
+      font-size: 24px;
+    }
+  }
+}

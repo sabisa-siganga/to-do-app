@@ -14,13 +14,35 @@ export const todoSlice = createSlice({
   },
 
   reducers: {
-    addTodo: () => {},
-    editTodo: () => {},
-    deleteTodo: () => {},
-    completeTodo: () => {},
+    addTodo: (state, action) => {
+      state.data[state.nextId] = {
+        content: action.payload.content,
+        completed: false,
+      };
+      state.nextId += 1;
+    },
+    editTodo: (state, action) => {
+      const todo = state.data[action.payload.id];
+
+      state.data[action.payload.id] = {
+        completed: todo.completed,
+        content: action.payload.content,
+      };
+    },
+    deleteTodo: (state, action) => {
+      delete state.data[action.payload.id];
+    },
+    completeTodo: (state, action) => {
+      const complete = state.data[action.payload.id];
+      state.data[action.payload.id] = {
+        completed: !complete.completed,
+        content: complete.content,
+      };
+    },
   },
 });
 
-export const { editTodo, deleteTodo, completeTodo } = todoSlice.actions;
+export const { addTodo, editTodo, deleteTodo, completeTodo } =
+  todoSlice.actions;
 
 export default todoSlice.reducer;
