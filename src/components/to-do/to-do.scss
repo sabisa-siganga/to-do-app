@@ -1,9 +1,7 @@
+/* styling of the btns container */
 .list-btns-cont {
   display: flex;
   justify-content: space-between;
-
-  .todos-list {
-  }
 
   /* styling of the buttons container */
   .buttons {
@@ -22,19 +20,25 @@
     border: 2px solid #fff;
     font-size: 15px;
 
+    /* styling of the span */
     span {
       font-size: 16px;
     }
   }
 
+  /* styling of the linestroke class */
   .linestroke {
     text-decoration: line-through;
   }
 }
+
+/* styling of the input-edits class */
 .input-edit {
   form {
     display: flex;
   }
+
+  /* styling of the input */
   input {
     width: 400px;
     height: 37px;
@@ -43,6 +47,8 @@
     padding: 0 10px;
     outline: none;
   }
+
+  /* styling of the save button */
   .save-btn {
     width: 45px;
     height: 37px;
@@ -56,6 +62,7 @@
     align-items: center;
     padding: 0;
 
+    /* styling of the span */
     span {
       font-size: 24px;
     }

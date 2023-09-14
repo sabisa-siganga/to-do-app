@@ -2,12 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
+// importing the provider component to nest app component
 import { Provider } from "react-redux";
 import store from "../src/store/store";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
+  // Making the store available to the app component and its children
   <Provider store={store}>
     <App />
   </Provider>

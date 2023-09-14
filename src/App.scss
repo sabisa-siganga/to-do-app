@@ -1,9 +1,10 @@
 /* react-bootstrap bootstrap link */
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-/* goolgle fonts link */
+/* google fonts link */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap");
 
+/* styling of the web page body  */
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -20,6 +21,7 @@ body {
   margin-bottom: 30px;
   border-radius: 10px;
 
+  /* styling of the form */
   .form-info {
     display: flex;
     justify-content: center;
@@ -48,6 +50,7 @@ body {
       }
     }
 
+    /* styling of the add button  */
     .add-button {
       width: 45px;
       height: 37px;
@@ -62,10 +65,13 @@ body {
       padding: 0;
     }
   }
+
+  /* styling of the input and add button container  */
   .input-add-btn {
     margin-bottom: 35px;
     padding: 0 70px;
   }
+  /* styling of the todo title */
   .heading {
     padding: 0 65px;
     font-weight: 400;
