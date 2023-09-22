@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders: <App /> taking a snapshot 1`] = `
+<div
+  className="todo-container container"
+>
+  <h2
+    className="title mb-5 text-center"
+  >
+    Todo List
+  </h2>
+  <div
+    className="input-add-btn"
+  >
+    <form
+      className="form-info"
+      onSubmit={[Function]}
+    >
+      <div
+        className="input-container"
+      >
+        <input
+          onChange={[Function]}
+          placeholder="Please enter a to-do"
+          required={true}
+          value=""
+        />
+      </div>
+      <div
+        className="add-btn"
+      >
+        <button
+          className="add-button btn btn-primary"
+          disabled={false}
+          type="submit"
+        >
+          <span
+            className="material-symbols-outlined py-1 "
+          >
+            add
+          </span>
+        </button>
+      </div>
+    </form>
+  </div>
+  <div
+    className="heading mb-3"
+  >
+    Todos:
+  </div>
+  <div
+    className="todo-list"
+  >
+    <div
+      className="list-btns-cont px-5"
+    >
+      <div
+        className="todo-content "
+      >
+        Content 1
+      </div>
+      <div
+        className="buttons"
+      >
+        <button
+          className="btns px-0 py-0 btn btn-primary"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="material-symbols-outlined py-1"
+          >
+            edit
+          </span>
+        </button>
+        <button
+          className="btns px-0 py-0 btn btn-primary"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="material-symbols-outlined py-1"
+          >
+            delete
+          </span>
+        </button>
+        <button
+          className="btns px-0 py-0 btn btn-primary"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            className="material-symbols-outlined py-1"
+          >
+            done
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
